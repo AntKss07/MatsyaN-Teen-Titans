@@ -1,6 +1,7 @@
-# 🐟 FishVision Agent
+# 🐟 PiscisAI
+PiscisAI is your friendly fish-identifying assistant! Just snap or upload a photo of a fish, and PiscisAI will tell you what species it is — instantly. Powered by a trained MobileNetV2 model, it doesn’t just stop at identification. You’ll also get interesting info about the fish’s habitat, conservation status, and even some fun facts.
 
-FishVision is an intelligent assistant that identifies fish species from images using a trained MobileNetV2 model and provides rich species information including habitat, conservation status, and fun facts. Built with TensorFlow, Gradio, and modular Python workflows.
+Built with TensorFlow, Gradio, and clean, modular Python code, PiscisAI is designed to be simple, fast, and surprisingly fun to use — whether you're a researcher, hobbyist, or just curious about the fish you saw on your last trip.
 
 ---
 
@@ -18,25 +19,25 @@ FishVision is an intelligent assistant that identifies fish species from images 
 
 ### 1️⃣ Clone the Repository
 
-```bash
 git clone https://github.com/your-username/FishVision-Agent.git
 cd FishVision-Agent
 
-
-Set Up Environment
+# ✅ Set Up the Environment
 
 python -m venv tf_env
 source tf_env/bin/activate  # or tf_env\Scripts\activate on Windows
 pip install -r requirements.txt
 
-Run the App
+# ▶️ Run the App
+
 python src/demo2.py
 Then open your browser to http://127.0.0.1:7860
 
-Evaluate Model
+# 📊 Evaluate the Model
+
 python src/evaluate.py
 
-project Structure
+# 🗂 Project Structure
 
 FishVision-Agent/
 ├── fish-dataset/              # Optional: sample images
@@ -54,7 +55,7 @@ FishVision-Agent/
 └── README.md
 
 
-Model Details
+# 🧠 Model Details
 
 Architecture: MobileNetV2 (transfer learning)
 Classes: 32 fish species
@@ -62,18 +63,19 @@ Input size: 224x224
 Framework: TensorFlow / Keras
 
 
-Optional GPT Integration
+# 🤖 Optional GPT Integration
+
 To enable GPT-based responses, set your OpenAI API key in llm_agent.py and use model="gpt-3.5-turbo"
 
 
-License
+
+# 📜 License
+
 MIT License — feel free to use, modify, and share.
 
 
-Acknowledgments
+# 🙌 Acknowledgments
+
 Built by Vyas with a passion for AI, biodiversity, and real-world impact 🌍🐠
 
 ---
-
-Let me know if you want to add screenshots, sample predictions, or a public link for demo sharing. You’ve built something worth showing off! 🐟💡📢
-
